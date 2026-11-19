@@ -1,0 +1,26 @@
+*{box-sizing:border-box}
+body{margin:0;font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif;background:#f4f5f9;color:#1b1d2a;display:flex;min-height:100vh}
+aside{width:220px;background:#1b1d2a;color:#fff;padding:20px;display:flex;flex-direction:column;gap:12px;position:sticky;top:0;height:100vh}
+aside h1{font-size:20px;margin:0 0 8px}aside nav{display:flex;flex-direction:column;gap:4px}
+aside a{color:#c9cbe0;text-decoration:none;padding:8px 10px;border-radius:8px}
+aside a:hover,aside a.on{background:#33375a;color:#fff}
+main{flex:1;padding:28px;max-width:960px}
+h2{margin-top:0}
+.panel{background:#fff;border-radius:12px;padding:18px;margin-bottom:20px;box-shadow:0 1px 3px #0001;display:flex;flex-direction:column;gap:12px}
+.panel.inline{flex-direction:row;flex-wrap:wrap;align-items:flex-end}.panel.narrow{max-width:420px}
+label{display:flex;flex-direction:column;gap:4px;font-weight:600;font-size:13px}
+input,textarea,select{font:inherit;padding:9px 10px;border:1px solid #cfd2e3;border-radius:8px;background:#fff}
+.btn{background:#5b5bd6;color:#fff;border:0;border-radius:8px;padding:10px 16px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.ghost{background:transparent;border:1px solid #8a8fb0;color:inherit}
+button.link{background:none;border:0;color:#5b5bd6;cursor:pointer;padding:0;font:inherit}.danger{color:#d12f4a!important}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #eceef6}
+td.act,.act{display:flex;gap:14px;align-items:center}.act form{margin:0}
+.flash{padding:10px 14px;border-radius:8px;margin-bottom:16px}.flash.ok{background:#dff6e5;color:#14532d}.flash.err{background:#fde2e6;color:#7f1d2d}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:20px}
+.stat{background:#fff;border-radius:12px;padding:16px;box-shadow:0 1px 3px #0001}.stat b{display:block;font-size:30px}
+.thumb{max-width:160px;border-radius:8px}
+.msg.new{border-left:4px solid #5b5bd6}.msg header{display:flex;justify-content:space-between}.msg .meta{color:#666;margin:0}
+body.login{align-items:center;justify-content:center}.box{background:#fff;padding:28px;border-radius:14px;width:360px;max-width:92vw;display:flex;flex-direction:column;gap:14px;box-shadow:0 4px 18px #0002}
+.box h1{margin:0}
+@media(max-width:760px){body{flex-direction:column}aside{width:100%;height:auto;position:static}aside nav{flex-direction:row;flex-wrap:wrap}}
